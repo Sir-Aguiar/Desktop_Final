@@ -4,12 +4,25 @@
     "password": "123456",
     "email": "felipeferreiraaguiar9@gmail.com",
     "name": "Felipe Aguiar",
+    "entries": []
+  },
+  {
+    "login": "felipe_aguiar",
+    "password": "123456",
+    "email": "felipeferreiraaguiar9@gmail.com",
+    "name": "Felipe Aguiar",
     "entries": [
       {
-        "title": "Fortnite Day",
-        "content": "Dia de jogar muito fortnit",
+        "title": "Apresentação do trabalho de desktop",
+        "content": "Hoje eu fiz a apresentação do trabalho de desktop....",
         "author": "Felipe Aguiar",
-        "date": "2025-07-06"
+        "date": "2025-07-14"
+      },
+      {
+        "title": "Entrada de teste",
+        "content": "Entrada de teste",
+        "author": "Felipe Aguiar",
+        "date": "2025-07-13"
       }
     ]
   }

@@ -1,11 +1,25 @@
 package org.example.gui;
 
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Component;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+import java.awt.Font;
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+import java.awt.Insets;
+
+import javax.swing.BorderFactory;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+
 import org.example.entities.User;
 import org.example.utils.JSONManager;
 import org.example.utils.ModernUIUtils;
-
-import javax.swing.*;
-import java.awt.*;
 
 public class MainFrame extends JFrame {
 
@@ -127,13 +141,6 @@ public class MainFrame extends JFrame {
     JPanel bottomPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
     bottomPanel.setBackground(ModernUIUtils.GRAY_700);
     bottomPanel.setPreferredSize(new Dimension(1000, 40));
-
-    JLabel infoLabel = ModernUIUtils.createModernLabel(
-            "© 2025 Diário Digital - Versão 2.0 | Feito com ❤️ em Java",
-            ModernUIUtils.SMALL_FONT,
-            ModernUIUtils.WHITE
-    );
-    bottomPanel.add(infoLabel);
 
     add(bottomPanel, BorderLayout.SOUTH);
 
