@@ -1,0 +1,16 @@
+[
+  {
+    "login": "sir_aguiar",
+    "password": "123456",
+    "email": "felipeferreiraaguiar9@gmail.com",
+    "name": "Felipe Aguiar",
+    "entries": [
+      {
+        "title": "Fortnite Day",
+        "content": "Dia de jogar muito fortnit",
+        "author": "Felipe Aguiar",
+        "date": "2025-07-06"
+      }
+    ]
+  }
+]

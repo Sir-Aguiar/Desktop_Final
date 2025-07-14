@@ -1,25 +1,26 @@
 package org.example;
 
+import org.example.gui.MainFrame;
+
 import javax.swing.*;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class App extends JFrame {
+public class Main {
 
-  public App() {
-    super();
-    initialize();
-  }
+  public static void main(String[] args) {
+    try {
+      UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
 
-  private void initialize() {
-    setTitle("Hello World");
-    setSize(400, 300);
-    this.setLayout(null);
-    this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-    this.setVisible(true);
-    this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    this.setLocationRelativeTo(null);
-    JLabel label = new JLabel("Hello, World!", SwingConstants.CENTER);
-    add(label);
+    SwingUtilities.invokeLater(() -> {
+      try {
+        MainFrame mainFrame = new MainFrame();
+        mainFrame.setVisible(true);
+      } catch (Exception e) {
+        e.printStackTrace();
+        JOptionPane.showMessageDialog(null, "Erro ao inicializar a aplicação: " + e.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE);
+      }
+    });
   }
 }
